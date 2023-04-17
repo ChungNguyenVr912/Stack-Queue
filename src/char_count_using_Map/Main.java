@@ -1,14 +1,11 @@
 package char_count_using_Map;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         String string = "The Map interface provides three collection views";
-        Map<String, Integer> map = new TreeMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         String[] array = string.split(" ");
         string = "";
         for (String s : array) {
